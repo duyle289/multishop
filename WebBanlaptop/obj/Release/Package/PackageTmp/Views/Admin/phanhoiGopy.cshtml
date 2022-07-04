@@ -1,0 +1,163 @@
+﻿@using WebBanlaptop.Models;
+@model GOPY
+
+@{
+    ViewBag.Title = "phanhoiGopy";
+    Layout = "~/Views/Layout/_AdminLayout.cshtml";
+    GOPY gy = (GOPY)ViewBag.gy;
+    bool type = (bool)ViewBag.type;
+    string tennv = ViewBag.tennv;
+
+}
+
+<div class="card shadow mb-4">
+    <div class="card-body">
+        <div class="table-responsive">
+            <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                <div class="col-sm-12">
+                    @if (type)
+                    {
+                        using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-horizontal">
+                                <h1 class="h3 mb-2 text-gray-800">Phản hồi góp ý</h1>
+                                <hr />
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+                                <div class="form-group">
+                                    @Html.Label("", "Tên", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBox("TEN", gy.TEN, new { @class = "form-control", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.TEN, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Label("", "Nội dung góp ý", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextArea("NOIDUNG", gy.NOIDUNG, new { @class = "form-control", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.NOIDUNG, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Label("", "Email", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBox("EMAIL", gy.EMAIL, new { @class = "form-control", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.EMAIL, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Label("", "Ngày gửi", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBox("NGAYGUI", gy.NGAYGUI.Value.ToString("dd/MM/yyyy"), new { @class = "form-control", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.NGAYGUI, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Label("", "Nội dung phản hồi", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextArea("NOIDUNGPHANHOI", "", new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.NOIDUNGPHANHOI, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <hr />
+                                <h1 class="h4 text-gray-900 mb-4">@ViewData["Error"]</h1>
+                                <hr />
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <button type="submit" value="" class="btn btn-default btn btn-info create-admin">Gửi phản hồi<i class="fa fa-reply" aria-hidden="true"></i></button>
+                                        <a href="@Url.Action("ListGopy","Admin")" class="btn btn-danger">Trở lại</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-horizontal">
+                                <h1 class="h3 mb-2 text-gray-800">Xem phản hồi góp ý</h1>
+                                <hr />
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+                                <div class="form-group">
+                                    @Html.Label("", "Tên", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBox("TEN", gy.TEN, new { @class = "form-control", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.TEN, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Label("", "Nội dung góp ý", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextArea("NOIDUNG", gy.NOIDUNG, new { @class = "form-control", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.NOIDUNG, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Label("", "Email", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBox("EMAIL", gy.EMAIL, new { @class = "form-control", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.EMAIL, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Label("", "Ngày gửi", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBox("NGAYGUI", gy.NGAYGUI.Value.ToString("dd/MM/yyyy"), new { @class = "form-control", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.NGAYGUI, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Label("", "Nội dung phản hồi", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextArea("NOIDUNGPHANHOI", gy.NOIDUNGPHANHOI, new { @class = "form-control", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.NOIDUNGPHANHOI, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("", "Ngày gửi phản hồi", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBox("NGAYGUI", gy.NGAYGUIPH.Value.ToString("dd/MM/yyyy"), new { @class = "form-control", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.NGAYGUI, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("", "Nhân viên phản hồi", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBox("TENNV", tennv, new { @class = "form-control", @disabled = "disabled" })
+                                        @Html.ValidationMessageFor(model => model.TEN, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <hr />
+                                <h1 class="h4 text-gray-900 mb-4">@ViewData["Error"]</h1>
+                                <hr />
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <a href="@Url.Action("ListGopy","Admin")" class="btn btn-danger">Trở lại</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

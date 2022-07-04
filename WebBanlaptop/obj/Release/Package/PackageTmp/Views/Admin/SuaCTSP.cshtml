@@ -1,0 +1,49 @@
+﻿@using WebBanlaptop.Models;
+@model CHITIETSP
+
+@{
+    ViewBag.Title = "SuaCTSP";
+    Layout = "~/Views/Layout/_AdminLayout.cshtml";
+    CHITIETSP ctsp = ViewBag.ctsp;
+}
+
+
+
+@using (Html.BeginForm("SuaCTSP", "Admin", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>CHITIETSP</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.Label("", "Tên sản phẩm", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBox("TENSP", ctsp.tenSP, new { @class = "form-control", @disabled = "disabled" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("", "Tên màu", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBox("TENMAU", ctsp.tenMau, new { @class = "form-control", @disabled = "disabled" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("", "Số lượng tồn", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBox("SOLUONGTON", ctsp.SOLUONGTON, new { @class = "form-control",@type="number",@min=0 })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Lưu" class="btn btn-default btn btn-info create-admin" />
+            <a href="@Url.Action("ListSanPham", "Admin")" class="btn btn-danger">Trở lại</a>
+        </div>
+    </div>
+</div>
+}
+
+

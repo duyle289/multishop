@@ -1,0 +1,291 @@
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\WebBanlaptop.dll.config
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\WebBanlaptop.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\WebBanlaptop.pdb
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\csc.exe
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\csc.exe.config
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\csc.rsp
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\csi.exe
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\csi.exe.config
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\csi.rsp
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.AppContext.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Collections.Immutable.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Console.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Globalization.Calendars.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.IO.Compression.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.IO.FileSystem.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Net.Http.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Net.Sockets.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Reflection.Metadata.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.ValueTuple.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Xml.XmlDocument.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Xml.XPath.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\vbc.exe
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\vbc.exe.config
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\vbc.rsp
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\VBCSCompiler.exe
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\roslyn\VBCSCompiler.exe.config
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\Antlr3.Runtime.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\EntityFramework.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\EntityFramework.SqlServer.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\Microsoft.Web.Infrastructure.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\Newtonsoft.Json.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.Helpers.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.Mvc.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.Optimization.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.Razor.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.WebPages.Deployment.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.WebPages.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.WebPages.Razor.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\WebGrease.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\EntityFramework.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\EntityFramework.SqlServer.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.Helpers.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.Mvc.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.Optimization.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.Razor.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.WebPages.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.WebPages.Deployment.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Web.WebPages.Razor.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\Newtonsoft.Json.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\Antlr3.Runtime.pdb
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\obj\Release\WebBanlaptop.csproj.AssemblyReference.cache
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\obj\Release\WebBanlaptop.csproj.CoreCompileInputs.cache
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\obj\Release\WebBanlaptop.csproj.CopyComplete
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\obj\Release\WebBanlaptop.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\obj\Release\WebBanlaptop.pdb
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Threading.Tasks.Extensions.dll
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\baocaoweb\WebBanlaptop\WebBanlaptop\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\WebBanlaptop.dll.config
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\WebBanlaptop.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\WebBanlaptop.pdb
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\csc.exe
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\csc.exe.config
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\csc.rsp
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\csi.exe
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\csi.exe.config
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\csi.rsp
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.AppContext.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Console.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.IO.Compression.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Net.Http.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Net.Sockets.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.ValueTuple.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Xml.XPath.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\vbc.exe
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\vbc.exe.config
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\vbc.rsp
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\VBCSCompiler.exe
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\Antlr3.Runtime.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\BouncyCastle.Crypto.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\EntityFramework.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\EntityFramework.SqlServer.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\Newtonsoft.Json.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\PagedList.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\PagedList.Mvc.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.Helpers.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.Mvc.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.Optimization.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.Razor.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.WebPages.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.WebPages.Razor.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\WebGrease.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\BouncyCastle.Crypto.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\EntityFramework.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\EntityFramework.SqlServer.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\ICSharpCode.SharpZipLib.pdb
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\ICSharpCode.SharpZipLib.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\PagedList.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\PagedList.Mvc.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.Helpers.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.Mvc.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.Optimization.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.Razor.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.WebPages.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\System.Web.WebPages.Razor.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\Newtonsoft.Json.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\Antlr3.Runtime.pdb
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\obj\Release\WebBanlaptop.csproj.AssemblyReference.cache
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\obj\Release\WebBanlaptop.csproj.CoreCompileInputs.cache
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\obj\Release\WebBanlaptop.csproj.CopyComplete
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\obj\Release\WebBanlaptop.dll
+C:\Users\duyle\OneDrive\Máy tính\WebLaptop\WebBanlaptop\obj\Release\WebBanlaptop.pdb
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\WebBanlaptop.dll.config
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\WebBanlaptop.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\WebBanlaptop.pdb
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\csc.exe
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\csc.exe.config
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\csc.rsp
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\csi.exe
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\csi.exe.config
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\csi.rsp
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.AppContext.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Collections.Immutable.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Console.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Globalization.Calendars.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.IO.Compression.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.IO.FileSystem.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Net.Http.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Net.Sockets.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Reflection.Metadata.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.ValueTuple.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Xml.XmlDocument.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Xml.XPath.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\vbc.exe
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\vbc.exe.config
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\vbc.rsp
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\VBCSCompiler.exe
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\roslyn\VBCSCompiler.exe.config
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\Antlr3.Runtime.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\BouncyCastle.Crypto.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\EntityFramework.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\EntityFramework.SqlServer.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\ICSharpCode.SharpZipLib.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\Microsoft.Web.Infrastructure.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\Newtonsoft.Json.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\PagedList.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\PagedList.Mvc.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Threading.Tasks.Extensions.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.Helpers.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.Mvc.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.Optimization.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.Razor.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.WebPages.Deployment.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.WebPages.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.WebPages.Razor.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\WebGrease.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\BouncyCastle.Crypto.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\EntityFramework.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\EntityFramework.SqlServer.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\ICSharpCode.SharpZipLib.pdb
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\ICSharpCode.SharpZipLib.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\PagedList.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\PagedList.Mvc.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Threading.Tasks.Extensions.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.Helpers.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.Mvc.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.Optimization.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.Razor.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.WebPages.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.WebPages.Deployment.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\System.Web.WebPages.Razor.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\Newtonsoft.Json.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\Antlr3.Runtime.pdb
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\obj\Release\WebBanlaptop.csproj.AssemblyReference.cache
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\obj\Release\WebBanlaptop.csproj.CoreCompileInputs.cache
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\obj\Release\WebBanlaptop.csproj.CopyComplete
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\obj\Release\WebBanlaptop.dll
+D:\3ndyear\baocaoweb\WebLaptop\WebBanlaptop\obj\Release\WebBanlaptop.pdb

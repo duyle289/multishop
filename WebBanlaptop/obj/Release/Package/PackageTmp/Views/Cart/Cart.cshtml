@@ -1,0 +1,149 @@
+﻿@using WebBanlaptop.Models;
+@model List<Cart>
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Layout/_HomeLayout.cshtml";
+    var totalBill = 0.0;
+}
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Danh sách Admin</h1>
+    <!-- DataTales Example -->
+
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="col-sm-12">
+                        <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th rowspan="1" colspan="1">Tên sản phẩm</th>
+                                    <th rowspan="1" colspan="1">Hình ảnh</th>
+                                    <th rowspan="1" colspan="1">Màu sắc</th>
+                                    <th rowspan="1" colspan="1">Số lượng</th>
+                                    <th rowspan="1" colspan="1">Đơn giá</th>
+                                    <th rowspan="1" colspan="1">Tổng tiền</th>
+                                    <th rowspan="1" colspan="1">Chức năng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr id="show" class="odd">
+                                        <td class="sorting_1">@item.tensp</td>
+                                        <td>
+                                            <a href="@Url.Action("chiTietSP","SanPham", new { id = item.masp})">
+                                                <img src="~/Content/HinhAnhSP/@item.hinhanh" width="250" alt=" " class="img-responsive">
+                                            </a>
+                                        </td>
+                                        <td>@item.tenmau</td>
+                                        @using (Html.BeginForm("capNhatSLSP", "Cart", new { @masp = item.masp, @mamau = item.mamau }))
+                                        {
+                                            <td class="invert">
+                                                <div class="quantity">
+                                                    <div class="quantity-select">
+                                                        <button type="submit" class="btn btn-primary btn-minus">
+                                                            <i class="fa fa-minus"></i>
+                                                        </button>
+
+                                                        <input type="number" name="soluong" class="entry value " value="@item.soluong" min="1" max="@item.slton">
+
+                                                        <button type="submit" class="btn btn-primary btn-plus">
+                                                            <i class="fa fa-plus"></i>
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td>@item.dongia.ToString("#,000") VNĐ</td>
+                                            <td>@item.tongtien.ToString("#,000") VNĐ</td>
+                                            <td class="invert">
+
+                                                <abbr title="Xóa sản phẩm">
+                                                    <button type="button" class="btn btn-danger modal-change-password" onclick="return confirm('Bạn có muốn xóa sản phẩm?'), location.href='@Url.Action("xoa1SPInCart", "Cart",new { @masp = item.masp, @mamau = item.mamau})'"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                                </abbr>
+                                            </td>
+                                        }
+                                    </tr>
+                                }
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="7" id="cart-next">
+                                        <a href="@Url.Action("showAllSP","SanPham")" class="btn btn-info">
+                                            <i class="fa fa-shopping-cart"></i>
+                                            Tiếp tục mua sắm
+                                        </a>
+                                        <abbr title="Xóa sản phẩm">
+                                            <button type="button" class="btn btn-danger modal-change-password" onclick="return confirm('Bạn có muốn xóa tất cả sản phẩm trong giỏ hàng?'), location.href='@Url.Action("xoaGH", "Cart")'"><i class="fa fa-trash" aria-hidden="true"></i> Xóa giỏ hàng</button>
+                                        </abbr>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <hr />
+                        <div style="float:right">
+
+                            <div class="col-md-5 checkout-left-basket" style="display: inline;">
+                                <h4>Thông tin khách hàng</h4>
+                                @foreach (var item in Model)
+                                {
+
+                                    totalBill += item.tongtien;
+                                }
+
+                                @using (Html.BeginForm("DatHang", "Cart", new { strURL = Request.Url.ToString() }, FormMethod.Post))
+                                {
+                                    <div class="infor-customer">
+
+                                        <div class="form-customer">
+                                            <div class="fillinform">
+                                                <input placeholder="Tên khách hàng" type="text" id="cusName" name="cusName" required="required" class="untouched pristine required phoneNumber__input" >
+                                                <input placeholder="Số điện thoại" type="tel" maxlength="10" id="cusPhone" name="cusPhone" required="required" class="untouched pristine required phoneNumber__input">
+                                                <input placeholder="Địa chỉ nhận hàng" type="text" id="cusStreet" name="cusStreet" required="required" class="untouched pristine required phoneNumber__input">
+                                                <input placeholder="Yêu cầu khác (không bắt buộc)" type="text" id="cusRequest" name="cusRequest" class="untouched pristine required phoneNumber__input">
+                                            </div>
+                                        </div>
+                                        
+
+
+                                    </div>
+
+                                    <div class="finaltotal">
+                                        <div class="total-price">
+                                            <strong style=" float: left; color: #333">Tổng tiền:</strong>
+                                            <strong style="float: right; color: #f30c28;">@String.Format("{0:##,#}", totalBill) VNĐ</strong>
+                                        </div> <hr /><br />
+
+                                        <div>
+                                            <button type="submit"  class="btn btn-danger submitorder" id="cart-btn">Đặt hàng</button>
+                                        </div>
+                                    </div>
+                                }
+
+                                </div>
+                            <div class="clearfix"> </div>
+
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style type="text/css">
+
+
+    #cart-next {
+        text-align: right;
+    }
+
+        #cart-next a {
+            margin: 3px 5px;
+        }
+</style>
+

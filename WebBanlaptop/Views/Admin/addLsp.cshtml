@@ -1,0 +1,54 @@
+﻿@model WebBanlaptop.Models.LOAISANPHAM
+@{
+    ViewBag.Title = "addLsp";
+    Layout = "~/Views/Layout/_AdminLayout.cshtml";
+}
+<div class="card shadow mb-4">
+    <div class="card-body">
+        <div class="table-responsive">
+            <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                <div class="col-sm-12">
+                    @using (Html.BeginForm("addLsp","Admin", FormMethod.Post, new {@enctype ="multipart/form-data"}))
+                    {
+                        @Html.AntiForgeryToken()
+                    <div class="form-horizontal">
+                        <h1 class="h3 mb-2 text-gray-800">Thêm loại sản phẩm</h1>
+                        <hr />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.TENLOAISP, "Tên loại sản phẩm", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.TENLOAISP, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.TENLOAISP, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.ICON,"Icon",htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                <input name="ICON" type="file"/>
+                                <span style="color:red;">@ViewBag.upload</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.TRANGTHAI, "Trạng thái", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10" style="position:relative; width:60px;">
+                                @Html.EditorFor(model => model.TRANGTHAI, new { htmlAttributes = new { @class = "form-control" } })
+                                @*@Html.ValidationMessageFor(model => model.TRANGTHAI, "", new { @class = "text-danger" })*@
+                            </div>
+                        </div>
+                        <hr />
+                        <h1 class="h4 text-gray-900 mb-4">@ViewData["Error"]</h1>
+                        <hr />
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Thêm loại sản phẩm" class="btn btn-default btn btn-info create-lsp" />
+                                <a href="@Url.Action("listloaiSP","Admin")" class="btn btn-danger">Trở lại</a>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,138 @@
+﻿@using WebBanlaptop.Models;
+@model SANPHAM
+@{
+    ViewBag.Title = "SuaSP";
+    Layout = "~/Views/Layout/_AdminLayout.cshtml";
+    SANPHAM sp = ViewBag.sp;
+}
+
+<script src="~/Scripts/tinymce/tinymce.min.js"></script>
+
+<script>
+    tinymce.init({
+        selector: 'textarea',
+        auto_focus: 'element1',
+        force_br_newlines: false,
+        force_p_newlines: false,
+        forced_root_block: '',
+    });
+</script>
+<div class="card shadow mb-4">
+    <div class="card-body">
+        <div class="table-responsive">
+            <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                <div class="col-sm-12">
+                    @using (Html.BeginForm("SuaSP", "Admin", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+                            <h1 class="h3 mb-2 text-gray-800">Cập nhật sản phẩm</h1>
+                            <hr />
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+                            <div class="form-group">
+                                @Html.Label("", "Tên sản phẩm", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-5">
+                                    @Html.TextBox("TENSP", sp.TENSP, new { @class = "form-control" })
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.Label("", "Đơn giá", new { @class = "control-label col-md-2" })
+                                <div class="col-md-2">
+                                    @Html.TextBox("DONGIA", sp.DONGIA, new { Type = "number", @class = "form-control" })
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.Label("", "Hình sản phẩm", htmlAttributes: new { @class = "control-label col-md-2" })                                    
+                                    <div class="col-md-10">
+                                        <input name="HINHANH" type="file" />
+                                        <span style="color:red">@ViewBag.upload</span>
+                                        <br />
+                                    </div>
+                                <img src="@Url.Content("~/Content/HinhAnhSP/" + sp.HINHANH)" width="300" />
+                            </div>
+                            <div class="form-group">
+                                @Html.Label("", "Trạng thái", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    <div class="checkbox">
+                                        @Html.CheckBox("TRANGTHAI", sp.TRANGTHAI, new { htmlAttributes = new { @class = "form-control", } })
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.MALSP, "Mã loại sản phẩm", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.DropDownList("MALSP", null, new { @class = "form-control" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.MANSX, "Mã nhà sản xuất", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.DropDownList("MANSX", null, new { @class = "form-control" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.Label("", "Sản phẩm mới", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    <div class="checkbox">
+                                        @Html.CheckBox("SANPHAMMOI", sp.SANPHAMMOI, new { htmlAttributes = new { @class = "form-control", } })
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.Label("", "Sản phẩm nổi bật", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    <div class="checkbox">
+                                        @Html.CheckBox("SPNOIBAT", sp.SPNOIBAT, new { htmlAttributes = new { @class = "form-control", } })
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.Label("", "Cấu hình", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+
+                                    <textarea name="CAUHINH" id="textarea">@sp.CAUHINH</textarea>
+
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("", "Mô tả", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10 ">
+
+                                        <textarea name="MOTA" id="textarea">@sp.MOTA</textarea>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <input type="submit" value="Lưu" class="btn btn-default btn btn-info create-admin" />
+                                        <a href="@Url.Action("ListSanPham", "Admin")" class="btn btn-danger">Trở lại</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

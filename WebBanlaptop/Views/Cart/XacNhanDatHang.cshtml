@@ -1,0 +1,31 @@
+﻿@model WebBanlaptop.Models.HOADON
+@{
+    ViewBag.Title = "XacNhanDatHang";
+    Layout = "~/Views/Layout/_HomeLayout.cshtml";
+}
+
+<div class="innerf-pages section ">
+
+    <div class="container">
+        <div class="left-confirm col-md-5">
+            <img id="ship-ic" src="~/Content/HinhAnhSP/fast-delivery.png" />
+        </div>
+        <div class="right-confirm col-md-7"style="flex: auto; max-width: fit-content">
+            <div class="content">
+                <h2>Đơn hàng của quý khách đã được chúng tôi ghi nhận.<br />
+                    Mã đơn hàng là: @Model.MAHD <br />
+                    Thời gian giao hàng dự kiến: @Model.NGAYGIAO.Value.ToString("dd/MM/yyyy").<br />
+                    Nếu có thắc mắc hoặc cần hỗ trợ hãy liên hệ với hotline: <strong>0907943574</strong>
+                </h2>
+                <h2>Xin cảm ơn !</h2>
+                <p>
+                    <a href="@Url.Action("showAllSP","SanPham")" class="btn btn-danger">
+                        <i class="fa fa-reply" ></i>
+                        Trở lại
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+

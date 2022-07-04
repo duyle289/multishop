@@ -1,0 +1,204 @@
+﻿@using WebBanlaptop.Models;
+@model IEnumerable<SANPHAM>
+
+@{
+    int iDem = 0; // đếm sl sp trên trang
+    int iSoLuongSPHienThi = 9;// sl sp hiển nthij trên trang
+    int iTrang = 1;//số trang
+
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+    int t = 1;
+    List<SANPHAM> lstsp = new List<SANPHAM>();
+    foreach (var item in Model)
+    {
+        lstsp.Add(item);
+    }
+    int sao = 0;
+}
+
+
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="#">Home</a>
+                <a class="breadcrumb-item text-dark" href="#">Shop</a>
+                <span class="breadcrumb-item active">Shop List</span>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+<!-- Shop Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-lg-3 col-md-4">
+            <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Tìm theo nhà sản xuất</span></h5>
+            @Html.Action("showmauSP", "SanPham")
+        </div>
+        <div class="col-lg-9 col-md-8">
+            <div class="row pb-3">
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <div class="ml-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Sắp xếp</button>
+
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item sapxep" data-type="LowHigh">Giá thấp đến cao</a>
+                                    <a class="dropdown-item sapxep" data-type="HighLow">Giá cao đến thấp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @foreach (var item in Model)
+                {
+                    if (iDem % iSoLuongSPHienThi == 0 && iDem != 0)
+                    {
+                        iTrang++;
+                    }
+                        <div id="show" class="@Url.Content("col-lg-4 col-md-6 col-sm-6 pb-1 Trang" + iTrang.ToString())">
+                            @*Phân SP theo so trang*@
+                            <div class="product-item bg-light mb-4">
+                                <div class="product-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="@Url.Content("~/Content/HinhAnhSP/"+item.HINHANH)" alt="">
+                                    <div class="product-action">
+                                        <a class="btn btn-outline-dark btn-square" href="@Url.Action("chiTietSP","SanPham",new { @id = item.MASP })"><i class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="h6 text-decoration-none text-truncate" href="@Url.Action("chiTietSP","SanPham",new { @id = item.MASP })">@item.TENSP</a>
+                                    <div class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>@item.DONGIA.Value.ToString("#,000")</h5><h6 class="text-muted ml-2"></h6>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center mb-1">
+                                        @for (int i = 1; i <= sao; i++)
+                                        {
+                                            <small class="fa fa-star text-primary mr-1"></small>
+
+                                        }@if (sao < 5)
+                                        {
+                                        int temp = 5 - sao;
+                                        for (int j = 1; j <= temp; j++)
+                                        {
+                                        <small class="far fa-star text-primary mr-1"></small>
+                                        }
+                                        }
+
+                                        @*<small class="fa fa-star text-primary mr-1"></small>
+        <small class="fa fa-star text-primary mr-1"></small>
+        <small class="fa fa-star text-primary mr-1"></small>
+        <small class="fa fa-star text-primary mr-1"></small>*@
+                                        <small>(99)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        iDem++;
+
+                }
+
+                <div class="col-12">
+                    <nav>
+                        <ul class="pagination justify-content-center">
+
+                            @for (int i = 1; i <= iTrang; i++)
+                            {
+                                <li class="page-item"><a class="page-link linkTrang" data-SoTrang="@Url.Content("Trang"+i)" data-Trang="@i">@i</a></li>
+
+                            }
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-12 col-md-5" style="text-align:center">
+                    <a id="trangg">Trang @t/@iTrang </a>
+                </div>
+            </div>
+        </div>
+        <!-- Shop Product End -->
+    </div>
+</div>
+<!-- Shop End -->
+<!--Style cho ẩn hết các sp và chỉ cho phép sp trang 1 hiện lên-->
+<style>
+    .pb-1 {
+        display: none;
+    }
+
+    .Trang1 {
+        display: block;
+    }
+</style>
+@*Xử lý khi click vào thì hiển thị sp theo số trang tương ứng bằng jQuery*@
+
+<script>
+
+    $('body').on("click",".linkTrang",function () {
+            //cho tất cả các trang ẩn đi
+            $(".pb-1").hide();
+            //lây số trang từ thẻ a
+            var soTrang = $(this).attr("data-SoTrang");
+            var Trang = $(this).attr("data-Trang");
+            //gọi class thuộc soTrang đó thì hiển thị
+            $("." + soTrang).show();
+       
+            document.getElementById("trangg").innerHTML = 'Trang ' + Trang + '/@iTrang';
+
+    });
+    @*$('body').on("click", ".sapxep", function () {
+        var model = @lstsp;
+            var type = $(this).attr("data-type");
+            alert(type);
+            $.ajax({
+                type: 'GET',
+                url: 'SanPham/SapXep',
+                data: JSON.stringify({
+                    type: type,
+                    model: model
+                }),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    alert(type);
+                }
+            });
+
+    });*@
+
+        @*$('.sapxep').click(function () {
+            var model = @lstsp;
+            var type = $(this).attr("data-type");
+            alert(type);
+            $.ajax({
+                traditional: true,
+                url: 'SanPham/SapXep',
+                type: 'POST',
+                data: JSON.stringify({
+                    type: type,
+                    model: model
+                }),
+                success: function (data) {
+                    alert(type);
+                }
+            });
+        })*@
+
+
+
+
+</script>
+
+
+
+
+

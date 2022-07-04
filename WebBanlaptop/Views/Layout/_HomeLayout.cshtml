@@ -1,0 +1,213 @@
+﻿@{ 
+    string tk = (string)Session["tukhoa"];
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MultiShop - Online Shop Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="~/Content/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="~/Content/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="~/Content/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="~/Content/css/style.css" rel="stylesheet">
+    <!-- Template Javascript -->
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+
+</head>
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-1 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center h-100">
+                    <a class="text-body mr-3" href="">About</a>
+                    <a class="text-body mr-3" href="">Contact</a>
+                    <a class="text-body mr-3" href="">Help</a>
+                    <a class="text-body mr-3" href="">FAQs</a>
+                </div>
+            </div>
+            @if (Session["User"] == null)
+            {
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Tài khoản</button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button onclick="location.href='@Url.Action("Login", "User",new { strURL = Request.Url.ToString()})'" class="dropdown-item" type="button">Đăng nhập</button>
+                                <button onclick="location.href='@Url.Action("DangKy", "User",new { strURL = Request.Url.ToString()})'" class="dropdown-item" type="button">Đăng ký</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-inline-flex align-items-center d-block d-lg-none">
+                        <a href="" class="btn px-0 ml-2">
+                            <i class="fas fa-heart text-dark"></i>
+                            <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
+                        </a>
+                        <a href="" class="btn px-0 ml-2">
+                            <i class="fas fa-shopping-cart text-dark"></i>
+                            <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
+                        </a>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <div class="btn-group">
+                            @Html.Action("showUser", "Home")
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button onclick="location.href='@Url.Action("MyProfile", "User")'" class="dropdown-item" type="button">Hồ sơ của tôi</button>
+                                <button onclick="location.href='@Url.Action("ChangePassword", "User")'" class="dropdown-item" type="button">Đổi mật khẩu</button>
+                                <button onclick="location.href='@Url.Action("OdersHistory", "User")'" class="dropdown-item" type="button">Lịch sử đặt hàng</button>
+                                <button onclick="location.href='@Url.Action("LogOut", "User")'" class="dropdown-item" type="button">Đăng xuất</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-inline-flex align-items-center d-block d-lg-none">
+                        <a href="" class="btn px-0 ml-2">
+                            <i class="fas fa-heart text-dark"></i>
+                            <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
+                        </a>
+                        <a href="" class="btn px-0 ml-2">
+                            <i class="fas fa-shopping-cart text-dark"></i>
+                            <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
+                        </a>
+                    </div>
+                </div>
+            }
+
+        </div>
+        <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+            <div class="col-lg-4">
+                <a href="@Url.Action("Index","Home")" class="text-decoration-none">
+                    <span class="h1 text-uppercase text-primary bg-dark px-2">Multi</span>
+                    <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Shop</span>
+                </a>
+            </div>
+            <div class="col-lg-4 col-6 text-left">
+                @using (Html.BeginForm("KQTimKiem", "Home", FormMethod.Post))
+                {
+                    if (tk != null)
+                    {
+
+
+                        <div class="input-group">
+                            <input value="@tk" type="text" name="TuKhoa" class="form-control" placeholder="Tìm kiếm sản phẩm">
+                            <div class="input-group-append">
+                                <button class="input-group-text bg-transparent text-primary">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="input-group">
+                            <input value=" " type="text" name="TuKhoa" class="form-control" placeholder="Tìm kiếm sản phẩm">
+                            <div class="input-group-append">
+                                <button class="input-group-text bg-transparent text-primary">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    }
+
+                }
+            </div>
+
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <!-- Navbar Start -->
+    @Html.Action("navbarPartial", "Home")
+    <!-- Navbar End -->
+    @RenderBody()
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <h5 class="text-secondary text-uppercase mb-4">Thông tin liên hệ</h5>
+
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>49/1E, đường số 7, phường Linh Tây, thành phố Thủ Đức</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>multishoplaptop@gmail.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+84 907943574</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">Danh mục sản phẩm</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Gaming</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Học tập, văn phòng</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>MacBook</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Đồ họa kĩ thuật</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Mỏng nhẹ</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Cao cấp, sang trọng</a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">Thông tin MultiShop</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Giới thiệu</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Liên hệ</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Thành viên</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5" style="width:100%">
+
+                        <iframe style="border:0;width: fit-content;height: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.3352290221987!2d106.75111881471923!3d10.86208729226345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752768f8b79947%3A0xf40161ff1bbb963b!2zNDkvMWUgxJAuIFPhu5EgNywgTGluaCBUw6J5LCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1656501097726!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top" style="display: inline;"><i class="fa fa-angle-double-up"></i></a>
+    <script src="~/Scripts/rating.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/lib/easing/easing.min.js"></script>
+    <script src="~/Content/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="~/Content/mail/jqBootstrapValidation.min.js"></script>
+    <script src="~/Content/mail/contact.js"></script>
+
+
+
+
+</body>
+</html>

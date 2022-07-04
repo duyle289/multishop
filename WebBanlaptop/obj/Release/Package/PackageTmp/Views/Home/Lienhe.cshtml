@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Lienhe";
+    Layout = "~/Views/Layout/_HomeLayout.cshtml";
+}
+<style>
+    .title-news {
+        text-transform: capitalize;
+    }
+</style>
+<div id="main">
+    <div class="content">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="title-news">Đóng góp ý kiến</h2>
+                @using (Html.BeginForm("Gopy", "Home"))
+                {
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <form>
+                        <div class="form-group">
+                            <label class="font-weight-bold"> Họ tên</label>
+                            <input type="text" name="txtName" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold"> Email</label>
+                            <input type="text" name="txtEmail" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold"> Nội dung</label>
+                            <textarea name="txtNoidung" class="form-control"></textarea>
+                        </div>
+                        <button id="btnSend" class="btn btn-success">Gửi</button>
+                    </form>
+                }
+                <div class="announcement send-error">@ViewBag.Error</div>
+                <div class="announcement send-success">@ViewBag.Success</div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="title-news">Thông tin liên hệ</h2>
+                <p class="font-weight-bold"> Tên cửa hàng: MultiShop</p>
+                <p class="font-weight-bold"> Hotline: +84 907943574</p>
+                <p class="font-weight-bold"> Email:multishoplaptop@gmail.com</p>
+                <p class="font-weight-bold"> Địa chỉ:49/1E, đường số 7, phường Linh Tây, thành phố Thủ Đức</p>
+                <p class="font-weight-bold"> Mọi thắc mắc xin vui lòng gửi mail hoặc gọi số điện thoại về shop để giải đáp...</p> 
+                <h2 class="title-news"> Bản đồ liên hệ</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.3352290221987!2d106.75111881471923!3d10.86208729226345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752768f8b79947%3A0xf40161ff1bbb963b!2zNDkvMWUgxJAuIFPhu5EgNywgTGluaCBUw6J5LCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1656501097726!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br />
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<style type="text/css">
+    .content h2 {
+        padding-left: 105px;
+        max-width: 100%;
+    }
+
+    .content p {
+        padding-left: 50px;
+    }
+
+    .content form {
+        padding-left: 45px;
+    }
+</style>
+

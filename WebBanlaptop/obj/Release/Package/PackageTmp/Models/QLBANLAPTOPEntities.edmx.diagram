@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f8f1d63064a04cc8bfab6e6143ebeebd" Name="Diagram1">
+        <EntityTypeShape EntityType="QLBANLAPTOPModel.BINHLUAN" Width="1.5" PointX="5.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBANLAPTOPModel.CHITIETSP" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBANLAPTOPModel.CHITIETHD" Width="1.5" PointX="10.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBANLAPTOPModel.HOADON" Width="1.5" PointX="8.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBANLAPTOPModel.KHACHHANG" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBANLAPTOPModel.LOAISANPHAM" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBANLAPTOPModel.MAUSAC" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBANLAPTOPModel.NHANVIEN" Width="1.5" PointX="6" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBANLAPTOPModel.NHASANXUAT" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBANLAPTOPModel.TINTUC" Width="1.5" PointX="10.75" PointY="8.375" IsExpanded="true" />
+        <AssociationConnector Association="QLBANLAPTOPModel.FK_BINHLUAN_KHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBANLAPTOPModel.FK_CHITIETSP_MAUSAC1" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBANLAPTOPModel.FK_CHITIETHD_CHITIETSP" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBANLAPTOPModel.FK_CHITIETHD_HOADON" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBANLAPTOPModel.FK_HOADON_KHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBANLAPTOPModel.FK_HOADON_NHANVIEN" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="QLBANLAPTOPModel.GOPY" Width="1.5" PointX="8.25" PointY="12.25" />
+        <AssociationConnector Association="QLBANLAPTOPModel.FK_GOPY_NHANVIEN" />
+        <EntityTypeShape EntityType="QLBANLAPTOPModel.SANPHAM" Width="1.5" PointX="3" PointY="2.125" />
+        <AssociationConnector Association="QLBANLAPTOPModel.FK_BINHLUAN_SANPHAM" />
+        <AssociationConnector Association="QLBANLAPTOPModel.FK_CHITIETSP_SANPHAM1" />
+        <AssociationConnector Association="QLBANLAPTOPModel.FK_SANPHAM_LOAISANPHAM" />
+        <AssociationConnector Association="QLBANLAPTOPModel.FK_SANPHAM_NHASANXUAT" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

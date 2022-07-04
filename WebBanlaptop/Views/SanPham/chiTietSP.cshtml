@@ -1,0 +1,323 @@
+﻿@using WebBanlaptop.Models;
+@model SANPHAM
+@{
+
+    ViewBag.Title = "chiTietSP";
+    Layout = "~/Views/Layout/_HomeLayout.cshtml";
+    IEnumerable<SANPHAM> lstSPCungLoai = (IEnumerable<SANPHAM>)ViewBag.SPCungLoai;
+    KHACHHANG kh = (KHACHHANG)Session["User"];
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+}
+
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="#">Home</a>
+                <a class="breadcrumb-item text-dark" href="#">Shop</a>
+                <span class="breadcrumb-item active">Shop Detail</span>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+<!-- Shop Detail Start -->
+<div class="container-fluid pb-5">
+    <div class="row px-xl-5">
+        <div class="col-lg-5 mb-30">
+            <div id="product-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner bg-light">
+                    <div class="carousel-item active">
+                        <img class="w-100 h-100" src="@Url.Content("~/Content/HinhAnhSP/" + Model.HINHANH)" alt="Image">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
+                    <i class="fa fa-2x fa-angle-left text-dark"></i>
+                </a>
+                <a class="carousel-control-next" href="#product-carousel" data-slide="next">
+                    <i class="fa fa-2x fa-angle-right text-dark"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-7 h-auto mb-30">
+            <div class="h-100 bg-light p-30">
+                <h3>@Model.TENSP</h3>
+                <div class="d-flex mb-3">
+                    <div class="text-primary mr-2">
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star-half-alt"></small>
+                        <small class="far fa-star"></small>
+                    </div>
+                    <small class="pt-1">(99 Reviews)</small>
+                </div>
+                <h3 class="font-weight-semi-bold mb-4">@Model.DONGIA.Value.ToString("#,000")</h3>
+                <p class="mb-4">
+                    Mô tả
+                </p>
+                @using (Html.BeginForm("themGH", "Cart", new { @masp = Model.MASP, @strURL = Request.Url.ToString() }, FormMethod.Post))
+                {
+                    <form>
+                        <div class="d-flex mb-4">
+                            <strong class="text-dark mr-3">Màu sắc:</strong>
+
+
+                            @{
+                                for (int i = 0; i < Model.maMau.Count(); i++)
+                                {
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="color-@i" name="maMau" value="@Model.maMau[i]">
+                                        <label class="custom-control-label" for="color-@i">@Model.mauSP[Model.maMau[i] - 1]</label>
+                                        <h3>@ViewBag.loimau</h3>
+
+                                    </div>
+                                }
+                            }
+                        </div>
+                        <div class="d-flex align-items-center mb-4 pt-2">
+                            <div class="input-group quantity mr-3" style="width: 130px;">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-primary btn-minus">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <input type="number" min="1" max="@Model.soluongton" name="soluong" class="form-control bg-secondary border-0 text-center" value="1">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-primary btn-plus">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            @if (Model.TRANGTHAI)
+                            {
+
+
+                                <button type="submit" onclick="return alert('Đã thêm sản phẩm vào giỏ hàng');" class="btn btn-primary px-3">
+                                    <i class="fa fa-shopping-cart mr-1"></i> Thêm vào giỏ hàng
+                                </button>
+                            }
+                            else
+                            {
+
+                                <button type="button" onclick="return alert('Sản phẩm đã hết hàng. Mời bạn xem sản phẩm khác');" class="btn btn-primary px-3">
+                                    <i class="fa fa-shopping-cart mr-1"></i> Hết hàng
+                                </button>
+                            }
+
+                        </div>
+                    </form>
+                }
+
+
+
+                <div class="d-flex pt-2">
+                    <strong class="text-dark mr-2">Share on:</strong>
+                    <div class="d-inline-flex">
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row px-xl-5">
+        <div class="col">
+            <div class="bg-light p-30">
+                <div class="nav nav-tabs mb-4">
+                    <a class="nav-item nav-link text-dark active" data-toggle="tab" href="#tab-pane-1">Mô tả sản phẩm</a>
+                    <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-2">Cấu hình</a>
+                    <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-3">Đánh giá</a>
+                </div>
+                <div class="tab-content">
+
+                    <div class="tab-pane fade show active" id="tab-pane-1">
+                        <h4 class="mb-3">Mô tả sản phẩm</h4>
+                        <p>@Model.MOTA</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-2">
+                        <h4 class="mb-3">Cấu hình</h4>
+                        <p>@Model.CAUHINH</p>
+                    </div>
+
+
+
+                    <div class="tab-pane fade" id="tab-pane-3">
+                        <div class="row">
+                            @using (Html.BeginForm("showReview", "SanPham", new { id = Model.MASP, strUrl = Request.Url.ToString() }))
+                            {
+                                <div class="col-md-6" style=" max-width: 100%;">
+                                    <h4 class="mb-4">@Model.BINHLUAN.GroupBy(n => n.MABL).Count() review for "@Model.TENSP"</h4>
+                                    @Html.Action("showReview", "SanPham")
+                                </div>
+                            }
+
+                        <div class="col-md-6">
+                            <h4 class="mb-4">Đánh giá sản phẩm</h4>
+                            <small>Địa chỉ email của bạn sẽ được bảo mật. Các trường bắt buộc được đánh dấu *</small>
+
+
+                            @using (Html.BeginForm("Review", "SanPham", new { id = Model.MASP, strUrl = Request.Url.ToString(), num =  " return 'SubmitComment()' " }, FormMethod.Post))
+                            {
+                                if (kh != null)
+                                {
+
+                                    <div class="d-flex my-3">
+                                        <p class="mb-0 mr-2"></p>
+                                        <div class="text-primary">
+                                            <div onmouseout="CRateSelected()">
+                                                <span class="far fa-star text-primary mr-1" id="Rate1" onclick="CRate(1)" onmouseover="CRateOver(1)" onmouseout="CRateOut(1)"></span>
+                                                <span class="far fa-star text-primary mr-1" id="Rate2" onclick="CRate(2)" onmouseover="CRateOver(2)" onmouseout="CRateOut(2)"></span>
+                                                <span class="far fa-star text-primary mr-1" id="Rate3" onclick="CRate(3)" onmouseover="CRateOver(3)" onmouseout="CRateOut(3)"></span>
+                                                <span class="far fa-star text-primary mr-1" id="Rate4" onclick="CRate(4)" onmouseover="CRateOver(4)" onmouseout="CRateOut(4)"></span>
+                                                <span class="far fa-star text-primary mr-1" id="Rate5" onclick="CRate(5)" onmouseover="CRateOver(5)" onmouseout="CRateOut(5)"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="message">Nội dung</label>
+                                            <textarea id="message" cols="30" rows="5" class="form-control" name="noidung"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Họ tên</label>
+                                            <input value="@kh.TENKH" type="text" class="form-control" id="name" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input value="@kh.EMAIL" type="email" class="form-control" id="email" disabled>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <input type="hidden" name="Rating" id="Rating" value="0" />
+                                            <input id="btn-send" type="submit" value="Leave Your Review" class="btn btn-primary px-3">
+                                        </div>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="message">Nội dung</label>
+                                            <textarea id="message" cols="30" rows="5" class="form-control" name="noidung"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Họ tên</label>
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <input type="submit" value="Leave Your Review" class="btn btn-primary px-3">
+                                        </div>
+                                    </form>
+                                }
+                            }
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Shop Detail End -->
+<!-- Products Start -->
+<div class="container-fluid py-5">
+    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Bạn cũng có thể thích</span></h2>
+    <div class="row px-xl-5">
+        <div class="col">
+            <div class="owl-carousel related-carousel">
+                @foreach (var item in lstSPCungLoai)
+                {<div class="product-item bg-light">
+
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="@Url.Content("~/Content/HinhAnhSP/"+item.HINHANH)" alt="">
+                            <div class="product-action">
+                                <a class="btn btn-outline-dark btn-square" href="@Url.Action("chiTietSP","SanPham",new {id = item.MASP })"><i class="fa fa-shopping-cart"></i></a>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="@Url.Action("chiTietSP","SanPham",new {id = item.MASP })">@item.TENSP</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>@item.DONGIA.Value.ToString("#,000")</h5><h6 class="text-muted ml-2"></h6>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+                                    <small class="fa fa-star text-primary mr-1"></small>
+                                    <small class="fa fa-star text-primary mr-1"></small>
+                                    <small class="fa fa-star text-primary mr-1"></small>
+                                    <small class="fa fa-star text-primary mr-1"></small>
+                                    <small class="fa fa-star text-primary mr-1"></small>
+                                    <small>(99)</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <!-- Products End -->
+
+</div>
+
+<script>
+    function SubmitComment() {
+        var sao = $("#Rating").val();
+        if ($("#Rating").val() == "0") {
+            alert("Please rate this service provider.");
+            return false;
+        }
+        else {
+            return sao;
+        }
+    }
+
+    function CRate(r) {
+        debugger;
+        $("#Rating").val(r);
+        for (var i = 1; i <= r; i++) {
+            $("#Rate" + i).attr('class', 'fa fa-star text-primary mr-1');
+        }
+        // unselect remaining
+        for (var i = r + 1; i <= 5; i++) {
+            $("#Rate" + i).attr('class', 'far fa-star text-primary mr-1');
+        }
+    }
+
+    function CRateOver(r) {
+        for (var i = 1; i <= r; i++) {
+            $("#Rate" + i).attr('class', 'fa fa-star text-primary mr-1');
+        }
+    }
+
+    function CRateOut(r) {
+        for (var i = 1; i <= r; i++) {
+            $("#Rate" + i).attr('class', 'far fa-star text-primary mr-1');
+        }
+    }
+
+    function CRateSelected() {
+        var setRating = $("#Rating").val();
+        for (var i = 1; i <= setRating; i++) {
+            $("#Rate" + i).attr('class', 'fa fa-star text-primary mr-1');
+        }
+    }
+</script>

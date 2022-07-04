@@ -1,0 +1,86 @@
+﻿@model WebBanlaptop.Models.KHACHHANG
+@{
+    ViewBag.Title = "MyProfile";
+    Layout = "~/Views/Layout/_HomeLayout.cshtml";
+    var item = Model;
+}
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-lg-3 col-md-4">
+            <div class="bg-light p-4 mb-30">
+                <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                    <button onclick="location.href='@Url.Action("MyProfile", "User")'" class="dropdown-item" type="button">Hồ sơ của tôi</button>
+                    <hr />
+                </div>
+                <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                    <button onclick="location.href='@Url.Action("ChangePassword", "User")'" class="dropdown-item" type="button">Đổi mật khẩu</button>
+                    <hr />
+                </div>
+                <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                    <button onclick="location.href='@Url.Action("OdersHistory", "User")'" class="dropdown-item" type="button">Lịch sử đặt hàng</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="banner-bg-inner">
+        </div>
+        <div style="position:relative; left:600px">
+            <div class="myProfile" @*style="width:100%;display:flex; justify-content:center"*@>
+                <!-- strURL :lưu xong reload lại trang-->
+
+                @using (Html.BeginForm(new { strURL = Request.Url.ToString() }))
+                {
+                    Html.AntiForgeryToken();
+                    <form>
+                        <div class="profile">
+                            <h3>Thông tin cá nhân</h3>
+                            <div class="form-group">
+                                <label for="name">Họ tên</label>
+                                <input type="text" class="form-control" id="name" name="NAME" aria-describedby="emailHelp" placeholder="Họ tên" value="@item.TENKH">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="EMAIL" placeholder="Email" value="@item.EMAIL">
+                            </div>
+                            <div class="form-group">
+                                <label for="CCCD">CCCD</label>
+                                <input type="text" class="form-control" id="CCCD" name="CCCD" placeholder="CCCD" value="@item.CCCD">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Địa chỉ</label>
+                                <input type="text" class="form-control" id="diachi" name="DIACHI" placeholder="Địa chỉ" value="@item.DIACHI">
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber">Điện thoại</label>
+                                <input type="tel" class="form-control" id="sdt" name="SDT" placeholder="Điện thoại" value="@item.SDT">
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Ngày Sinh</label>
+                                <input type="date" class="form-control" id="NGAYSINH" name="NGAYSINH" placeholder="Ngày Sinh" value="@String.Format("{0:yyyy-MM-dd}",item.NGAYSINH)">
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="save-btn"><i class="fa fa-save"></i>Lưu</button>
+                            <h3 id="Error">@ViewData["Error"]</h3>
+                            <h3 id="Success">@ViewData["Success"]</h3>
+                        </div>
+                    </form>
+                }
+                <script>
+                    addEventListener("load", function () {
+                        setTimeout(hideURLbar, 0);
+                    }, false);
+                    function hideURLbar() {
+                        window.scrollTo({ top: 380, behavior: 'smooth' });
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<style type="text/css">
+    .form-control{
+        width: 300px;
+        border-radius: 30px;
+    }
+</style>
